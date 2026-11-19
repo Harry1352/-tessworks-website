@@ -1,33 +1,31 @@
-# TessWorks Website V2 — multi-page starter
+# TessWorks Website Redesign
 
-A responsive static website built with HTML, CSS and JavaScript. No paid builder or build tools are required.
+Responsive multi-page static site. No build tools, frameworks or paid hosting required.
 
 ## Pages
-- `index.html` — animated homepage with canvas network visual
-- `ecosystem.html` — separate AI, Automation, Web3 and Fintech sections
-- `work.html` — projects overview with links to individual project pages
-- `trading-system.html` — algorithmic trading research project detail
-- `tess-ai.html` — TESS AI assistant project detail
-- `founder.html` — founder profile with photo placeholder
-- `contact.html` — contact page
+- index.html — homepage and 20–25 second introduction film placeholder
+- work.html — projects and demo-video placeholders
+- projects/trading-system.html — algorithmic trading project
+- projects/tess-ai.html — TESS AI project
+- ecosystem.html — intelligent systems, automation, financial technology, emerging technology
+- founder.html — founder profile and portrait placeholder
+- contact.html — contact page
 
-## Preview
-Unzip and open `index.html` in Chrome or Safari.
+## Add media
+Put files inside `assets/` with these exact names:
+- `tessworks-intro.mp4` — homepage intro film (20–25 seconds)
+- `trading-demo.mp4` — trading software demo
+- `tess-demo.mp4` — TESS AI demo
+- `harshit-photo.jpg` — founder portrait
 
-## Add your founder photo
-1. Put your portrait in the `assets` folder and name it `harshit-photo.jpg`.
-2. In `founder.html`, find `<div class="photo-placeholder"> ... </div>`.
-3. Replace that entire block with: `<img src="assets/harshit-photo.jpg" alt="Harshit Agarwal, Founder of TessWorks">`.
+Optional video poster images: `intro-poster.jpg`, `trading-demo-poster.jpg`, `tess-demo-poster.jpg`.
 
-## Replace links and email
-In `work.html`, replace `https://github.com/` with your actual GitHub profile URL. In `founder.html`, replace the GitHub and LinkedIn homepage links with your profiles. Replace `hello@tessworks.in` in `contact.html` with an email address you monitor.
+The video blocks are already connected to those filenames. Until you add the MP4s, the designed placeholders remain visible.
 
-## Publish/update with GitHub Pages
-Upload all files and the `assets` folder to the root of your existing `tessworks-website` repository. Keep all HTML pages, `style.css`, and `script.js` at the root. Commit changes. GitHub Pages will redeploy from `main` / root if that is your configured source. Your old homepage will be replaced by this version.
+## Important image path fix
+Your founder image must be in `assets/harshit-photo.jpg`, not at the repository root. In GitHub's upload page, drag the `assets` folder itself if using the web interface; alternatively create folder `assets` with Add file > Create new file and name it `assets/harshit-photo.jpg`, then upload the image content using GitHub Desktop or git. GitHub web upload preserves folders when you drag the folder from Finder into the upload area, but if it selects only the image, use GitHub Desktop or the browser upload picker after opening the folder and selecting the image. Confirm the final path shown in the repository is `assets/harshit-photo.jpg`.
 
-After testing the GitHub Pages URL, keep your existing custom-domain configuration for `tessworks.in`. If domain setup is not complete, use the repository Settings → Pages → Custom domain instructions and follow the exact DNS records shown there; do not guess DNS values.
+## Before publishing
+Replace generic GitHub/LinkedIn profile links with your actual profile URLs. Confirm `hello@tessworks.in` is an inbox you monitor. Preserve your existing `CNAME` file and GitHub Pages custom-domain settings.
 
-## Visual/video roadmap
-The homepage network is an original canvas animation. The other visual panels are CSS/SVG animated illustrations, so no stock-video licensing or paid service is required. Later, replace selected panels with original footage of your actual software, or properly licensed/created background videos. Autoplay videos should be muted, compressed and have a mobile/reduced-motion fallback.
-
-Before launch, verify all project claims and statuses, add real GitHub/LinkedIn links and a working contact email. Blockchain is labelled as brainstorming, not a launched product. Never publish API keys, passwords or private repository URLs.
+Market graphics are illustrative, not live market data. Project stages are stated transparently; the site does not claim live trading or completed product capabilities.
